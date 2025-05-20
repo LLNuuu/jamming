@@ -6,8 +6,8 @@ function Spotify() {
     const getToken = async () => {
         const spotifyEndpoint = "/api/token";
         const contentType = "application/x-www-form-urlencoded";
-        const clientId = "6eb4dc3f650a4845a00a7ad72bdb78bc";
-        const clientSecret = "b94fbfc9e378464599ebf29f271bc53d";
+        const clientId = "your client id here";
+        const clientSecret = "your client secret here";
 
         try {
 
