@@ -1,27 +1,12 @@
 import React from "react";
 import Track from "./Track";
 
-export default function TrackList() {
-    const songs = [
-        {
-            songName: "Shape of You",
-            artist: "Ed Sheeran",
-            album: "Divide"
-        },
-        {
-            songName: "Blinding Lights",
-            artist: "The Weeknd",
-            album: "After Hours"
-        },
-        {
-            songName: "Levitating",
-            artist: "Dua Lipa",
-            album: "Future Nostalgia"
-        }
-    ];
+export default function TrackList({ songs, handleAdd }) {
+
+
     const tracks = songs.map(({ songName, artist, album }) => (
         <li key={`${songName}`} >
-            <Track songName={songName} artist={artist} album={album} />
+            <Track songName={songName} artist={artist} album={album} handleType="add" onClick={handleAdd} />
         </li>));
 
     return (
